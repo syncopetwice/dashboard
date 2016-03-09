@@ -1,0 +1,29 @@
+<div class="user">
+  <div class="row">
+      <div class="col-md-1"><img class="img-responsive" src="http://placehold.it/100"></div>
+      <div class="col-md-2">
+        <strong>Representative</strong>
+        <div><%= @representative %></div><br>
+      </div>
+      <div class="col-md-2">
+        <strong>Team</strong>
+        <div><%= @team %></div><br>
+      </div>
+      <div class="col-md-2">
+        <strong>Coach</strong>
+        <div><%= @coach %></div>
+      </div>
+      <div class="col-md-2">
+        <strong>Start Date</strong>
+        <div><%= @startDate %></div><br>
+      </div>
+      <div class="col-md-2">
+        <strong>End Date</strong>
+        <div><%= @endDate %></div>
+      </div>
+      <div class="col-md-1">
+        <a href="#">Get details</a>
+      </div>
+  </div>
+  <hr>
+</div>

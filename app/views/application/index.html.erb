@@ -1,0 +1,15 @@
+<!-- Application -->
+<div id="application">
+  <div id="users-region"></div>
+  <div id="user-region"></div>
+</div>
+<!-- End :: Application -->
+
+<%= javascript_tag do %>
+  $(function() {
+    var options = {
+      history: true,
+    };
+    MR.start(options);
+  });
+<% end %>
