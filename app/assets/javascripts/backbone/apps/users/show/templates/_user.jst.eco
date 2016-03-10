@@ -22,7 +22,7 @@
         <div><%= @endDate %></div>
       </div>
       <div class="col-md-1">
-        <a href="#">Get details</a>
+        <button class="get-details">Get details</button>
       </div>
   </div>
   <hr>

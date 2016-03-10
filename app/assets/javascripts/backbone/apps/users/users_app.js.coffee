@@ -1,8 +1,23 @@
-@MR.module "UsersApp", (UsersApp, App, Backbone, Marionette, $, _) ->
+@MR.module "Users", (Users, App, Backbone, Marionette, $, _) ->
+
+  class Users.Router extends Mn.AppRouter
+    appRoutes:
+      "users"             : "users"
+      "users/user/:model" : "user"
 
   API = 
-    show: ->
-      UsersApp.Show.Controller.show()
+    users: ->
+      Users.Show.Controller.show()
+    user: (model) ->
+      Users.User.Show.Controller.show(model)
 
-  UsersApp.on "start", ->
-    API.show()
+  App.vent.on "user:clicked", (model) ->
+    Backbone.history.navigate("users/user/#{model.get('url')}")
+    API.user model
+
+  Users.on "start", ->
+    API.users()
+
+  App.addInitializer ->
+    new Users.Router
+      controller: API

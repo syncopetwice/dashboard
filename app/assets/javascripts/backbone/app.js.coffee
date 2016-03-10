@@ -7,7 +7,6 @@
   App.addRegions
     mainRegion : "#application"
     usersRegion: "#users-region"
-    userRegion: "#user-region"
 
   App.on "start", (options) ->
     if options.history
@@ -17,6 +16,6 @@
     else
       throw new Error ("History is off")
 
-    App.module("UsersApp").start()
+    App.module("Users").start()
 
   App

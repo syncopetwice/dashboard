@@ -9,6 +9,7 @@
     getUsers: ->
       new Backbone.Collection [
         {
+          url: "001"
           representative: "George Kenessey"
           team: "West Coast"
           coach: "David Director"
@@ -16,6 +17,7 @@
           endDate: "Dec 31, 2013"
         }
         {
+          url: "002"
           representative: "Christopher Nolan"
           team: "East Coast"
           coach: "Craig Bellamy"
