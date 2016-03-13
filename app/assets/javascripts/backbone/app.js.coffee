@@ -6,16 +6,18 @@
 
   App.addRegions
     mainRegion : "#application"
-    usersRegion: "#users-region"
 
-  App.on "start", (options) ->
-    if options.history
-      if Backbone.history
-        Backbone.history.start()
-        @navigate(@rootRoute, trigger: true) if @getCurrentRoute() is ""
-    else
-      throw new Error ("History is off")
+  App.on "start", () ->
+    if Backbone.history
+      Backbone.history.start()
+      @navigate(@rootRoute, trigger: true) if @getCurrentRoute() is ""
 
     App.module("Users").start()
 
   App
+
+###
+TODO LIST:
+  create LAYOUT FOR USER
+  add routes
+###

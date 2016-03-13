@@ -1,0 +1,10 @@
+<td></td>
+<td><%= @representative %></td>
+<td><%= @team %></td>
+<td><%= @coach %></td>
+<td><%= @startDate %></td>
+<td><%= @endDate %></td>
+<td>
+  <button class="btn btn-primary js-show">Show</button>
+  <button class="btn btn-danger js-delete">Delete</button>
+</td>

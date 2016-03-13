@@ -1,14 +1,9 @@
 <!-- Application -->
-<div id="application">
+<div class="container">
+  <div class="row" id="application"></div>
 </div>
-<div id="users-region"></div>
-<!-- End :: Application -->
 
+<!-- End :: Application -->
 <%= javascript_tag do %>
-  $(function() {
-    var options = {
-      history: true,
-    };
-    MR.start(options);
-  });
+  $(function() {MR.start();});
 <% end %>

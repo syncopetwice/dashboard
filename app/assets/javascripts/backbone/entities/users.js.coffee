@@ -7,7 +7,7 @@
 
   API =
     getUsers: ->
-      new Backbone.Collection [
+      new Entities.Users [
         {
           url: "001"
           representative: "George Kenessey"
@@ -23,6 +23,14 @@
           coach: "Craig Bellamy"
           startDate: "March 5, 2012"
           endDate: "Sep 2, 2017"
+        }
+        {
+          url: "003"
+          representative: "Hugh Jackman"
+          team: "South Coast"
+          coach: "Drake Usher"
+          startDate: "June 2, 2013"
+          endDate: "Sep 22, 2017"
         }
       ]
 
