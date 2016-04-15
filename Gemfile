@@ -12,11 +12,16 @@ gem 'uglifier', '>= 1.3.0'
 # Use CoffeeScript for .js.coffee assets and views
 gem 'coffee-rails', '~> 4.0.0'
 gem 'eco'
+gem 'rabl'
+gem 'oj'
+gem 'font-kit-rails', '~> 1.2.0'
+gem 'normalize-rails'
 gem 'bootstrap-sass-rails'
 gem "font-awesome-rails"
 gem "ionicons-rails"
 gem 'autoprefixer-rails', '~> 6.1', '>= 6.1.0.1'
 gem 'chartist-rails'
+gem 'faker'
 # See https://github.com/sstephenson/execjs#readme for more supported runtimes
 # gem 'therubyracer',  platforms: :ruby
 

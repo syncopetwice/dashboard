@@ -1,8 +1,0 @@
-<h1>User</h1>
-<td></td>
-<td><%= @representative %></td>
-<td><%= @team %></td>
-<td><%= @coach %></td>
-<td><%= @startDate %></td>
-<td><%= @endDate %></td>
-<td></td>

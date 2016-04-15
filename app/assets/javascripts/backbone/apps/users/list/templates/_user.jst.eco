@@ -1,10 +1,10 @@
-<td></td>
-<td><%= @representative %></td>
-<td><%= @team %></td>
-<td><%= @coach %></td>
-<td><%= @startDate %></td>
-<td><%= @endDate %></td>
+<td><%= @id %></td>
+<td><%= @first_name %></td>
+<td><%= @last_name %></td>
+<td><%= @created_at_formatted %></td>
+<td><%= @updated_at_formatted %></td>
 <td>
-  <button class="btn btn-primary js-show">Show</button>
-  <button class="btn btn-danger js-delete">Delete</button>
+  <button type="button" class="btn btn-blue js-show">Show</button>
+  <button type="button" class="btn btn-red js-delete">Delete</button>
+  <button type="button" class="btn btn-green js-model">Model</button>
 </td>

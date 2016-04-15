@@ -1,8 +1,9 @@
 do (Backbone) ->
-	_.extend Backbone.Marionette.Application::,
+  _.extend Backbone.Marionette.Application::,
 
-		navigate: (route, options = {}) ->
-			Backbone.history.navigate route, options
+    navigate: (route, options = {}) ->
+      route = "#/" + route
+      Backbone.history.navigate route, options
 
-		getCurrentRoute: ->
-			Backbone.history.fragment
+    getCurrentRoute: ->
+      Backbone.history.fragment
