@@ -3,7 +3,6 @@
   <br>
   <section class="search-controls">
     <input type="text" class="js-search-input search-input" data-role="search" placeholder="Search..." />
-    <button type="button" class="js-search-button btn btn-blue" data-role="search">Search</button>
   </section>
   <table class="table">
     <thead>
@@ -17,5 +16,8 @@
       </tr>
     </thead>
     <tbody></tbody>
+    <tfoot></tfoot>
   </table>
+
+  <div class="watable"></div>
 </div>

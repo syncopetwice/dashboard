@@ -12,6 +12,7 @@
 
         # Render
         App.application.show view
+        $table = $('table.table').WATable
 
         # Events
           # Show
