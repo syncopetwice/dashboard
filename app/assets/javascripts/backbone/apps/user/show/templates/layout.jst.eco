@@ -1,3 +1,2 @@
 <button type="button" class="btn btn-blue" data-role="back">Back</button>
-<div id="user-details-region"></div>
-<div id="user-charts-region"></div>
+

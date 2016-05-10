@@ -5,15 +5,11 @@
     tagName: "tr"
 
     events:
-      "click .js-show"         : "show"
-      "click .js-delete"       : "delete"
+      "click .js-show" : "show"
 
     # Events
     show: (ev) ->
       @trigger "user:show", @model
-
-    delete: (ev) ->
-      @trigger "user:delete", @model
 
   class List.Empty extends Mn.ItemView
     template: "users/list/templates/_empty"
@@ -24,6 +20,3 @@
     childView: List.User
     childViewContainer: "tbody"
     emptyView: List.Empty
-
-    events:
-      "keyup .js-search-input": -> App.vent.trigger "user:search"

@@ -22,6 +22,8 @@ gem "ionicons-rails"
 gem 'autoprefixer-rails', '~> 6.1', '>= 6.1.0.1'
 gem 'chartist-rails'
 gem 'faker'
+gem 'jquery-datatables-rails', '~> 3.3.0'
+
 # See https://github.com/sstephenson/execjs#readme for more supported runtimes
 # gem 'therubyracer',  platforms: :ruby
 

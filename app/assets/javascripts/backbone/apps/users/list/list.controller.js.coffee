@@ -4,6 +4,7 @@
 
     list: ->
       users = App.request "users:entities"
+
       # Execute
       App.execute "when:fetched", users, =>
 
@@ -12,16 +13,20 @@
 
         # Render
         App.application.show view
-        $table = $('table.table').WATable
+
+        $("#users-table").DataTable({
+          "columnDefs": [ {
+              "targets": [ 5 ],
+              "orderable": false,
+            } ],
+          "aLengthMenu": [[10, 25, -1], [10, 25, "All"]],
+          "iDisplayLength": 10,
+        })
 
         # Events
           # Show
         view.on "childview:user:show", (iv, model) ->
           App.vent.trigger "user:show", model
-          # Delete
-        view.on "childview:user:delete", (iv, model) ->
-          console.log "Model remove"
-          model.destroy()
           
     getView: (users) ->
       new List.Users

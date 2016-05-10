@@ -1,23 +1,16 @@
-<div class="col-md-12">
-  <h1>Users</h1>
-  <br>
-  <section class="search-controls">
-    <input type="text" class="js-search-input search-input" data-role="search" placeholder="Search..." />
-  </section>
-  <table class="table">
-    <thead>
-      <tr>
-        <th>Id</th>
-        <th>First Name</th>
-        <th>Last Name</th>
-        <th>Created At</th>
-        <th>Updated At</th>
-        <th>Actions</th>
-      </tr>
-    </thead>
-    <tbody></tbody>
-    <tfoot></tfoot>
-  </table>
-
-  <div class="watable"></div>
-</div>
+<h1>Users</h1>
+<br>
+<table class="table table-hover table-striped" id="users-table">
+  <thead>
+    <tr>
+      <th>Id</th>
+      <th>First Name</th>
+      <th>Last Name</th>
+      <th>Created At</th>
+      <th>Updated At</th>
+      <th>Actions</th>
+    </tr>
+  </thead>
+  <tbody></tbody>
+  <tfoot></tfoot>
+</table>

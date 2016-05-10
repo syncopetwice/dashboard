@@ -7,7 +7,7 @@
     appRoutes:
       "users/user/:id/show" : "show"
 
-  API = 
+  API =
     show: (id) ->
       User.Show.Controller.show id
 
@@ -15,7 +15,7 @@
     API.show()
 
   App.vent.on "user:show", (user) ->
-    App.navigate "users/user/#{user.attributes.id}", trigger: true
+    App.navigate "users/user/#{user.attributes.id}", {trigger: true}
     API.show user
 
   App.addInitializer ->

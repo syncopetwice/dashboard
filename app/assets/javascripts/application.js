@@ -14,7 +14,8 @@
 //= require underscore
 //= require backbone
 //= require marionette
-//= require watable
+//= require dataTables/jquery.dataTables
+//= require dataTables/bootstrap/3/jquery.dataTables.bootstrap
 //= require_tree ./backbone/config
 //= require backbone/app
 //= require_tree ./backbone/entities

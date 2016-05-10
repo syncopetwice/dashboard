@@ -4,7 +4,5 @@
 <td><%= @created_at_formatted %></td>
 <td><%= @updated_at_formatted %></td>
 <td>
-  <button type="button" class="btn btn-blue js-show">Show</button>
-  <button type="button" class="btn btn-red js-delete">Delete</button>
-  <button type="button" class="btn btn-green js-model">Model</button>
+  <button type="button" class="btn btn-primary js-show">Show</button>
 </td>

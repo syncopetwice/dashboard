@@ -13,10 +13,3 @@
       @navigate(@rootRoute, trigger: true) if @getCurrentRoute() is ""
 
   App
-
-###
-TODO LIST:
-  create LAYOUT FOR USER
-  add routes
-  make routes work with different entry points
-###

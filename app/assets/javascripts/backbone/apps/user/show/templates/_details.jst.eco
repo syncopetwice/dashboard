@@ -1,12 +1,1 @@
-<h2>User: <%= @full_name %></h2>
-<table class="table">
-  <thead>
-    <tr>
-      <th>ID</th>
-      <th>First Name</th>
-      <th>Last Name</th>
-      <th>Created At</th>
-    </tr>
-  </thead>
-  <tbody></tbody>
-</table>
+details
