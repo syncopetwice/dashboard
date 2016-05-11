@@ -9,6 +9,7 @@
         @layout.on "show", =>
           @showDetails users
           @showCharts users
+          @showOpportunity users
         App.application.show @layout
 
     # Actions
@@ -20,6 +21,10 @@
       view = @getChartsView users
       @layout.charts.show view
 
+    showOpportunity: (users) ->
+      view = @getOpportunityView users
+      @layout.opportunity.show view
+
     # Views
 
     getDetailsView: (users) ->
@@ -28,6 +33,10 @@
 
     getChartsView: (users) ->
       new Show.Charts
+        collection: users
+
+    getOpportunityView: (users) ->
+      new Show.Opportunity
         collection: users
 
     getLayout: (users) ->

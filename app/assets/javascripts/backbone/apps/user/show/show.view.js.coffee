@@ -6,6 +6,7 @@
     regions:
       details: "#user-details-region"
       charts:  "#user-charts-region"
+      opportunity: "#user-opportunity-region"
 
     events:
       "click [data-role='back']": "back"
@@ -13,16 +14,14 @@
     back: ->
       App.vent.trigger "user:back"
 
-  class Show.Detail extends Mn.ItemView
-    template: "user/show/templates/_detail"
-    tagName: "tr"
-
-  class Show.Details extends Mn.CompositeView
+  class Show.Details extends Mn.ItemView
     template: "user/show/templates/_details"
     className: "user-details"
-    childView: Show.Detail
-    childViewContainer: "tbody"
 
   class Show.Charts extends Mn.ItemView
-    className: "user-charts"
     template: "user/show/templates/_charts"
+    className: "user-charts"
+
+  class Show.Opportunity extends Mn.ItemView
+    template: "user/show/templates/_opportunity"
+    className: "user-opportunity"

@@ -14,14 +14,20 @@
         # Render
         App.application.show view
 
-        $("#users-table").DataTable({
-          "columnDefs": [ {
-              "targets": [ 5 ],
-              "orderable": false,
-            } ],
-          "aLengthMenu": [[10, 25, -1], [10, 25, "All"]],
-          "iDisplayLength": 10,
-        })
+        # Config for jQuery.dataTable
+        config =
+          'columnDefs': [ {
+            'targets': [ 5 ]
+            'orderable': false
+          } ]
+          'aLengthMenu': [
+            [ 10, 25, -1 ]
+            [ 10, 25, 'All' ]
+          ]
+          'iDisplayLength': 10
+
+        # jQuery plugin for tables
+        $("#users-table").DataTable(config)
 
         # Events
           # Show
