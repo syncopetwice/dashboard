@@ -5,7 +5,7 @@
     appRoutes:
       "users" : "list"
 
-  API = 
+  API =
     list: ->
       Users.List.Controller.list()
 

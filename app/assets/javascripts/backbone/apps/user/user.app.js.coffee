@@ -5,7 +5,7 @@
   class User.Router extends Mn.AppRouter
     controller: API
     appRoutes:
-      "users/user/:id/show" : "show"
+      "users/user/:id" : "show"
 
   API =
     show: (id) ->

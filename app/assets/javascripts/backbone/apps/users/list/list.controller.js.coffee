@@ -16,6 +16,7 @@
 
         # Config for jQuery.dataTable
         config =
+          info: false,
           'columnDefs': [ {
             'targets': [ 5 ]
             'orderable': false

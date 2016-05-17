@@ -1,1 +1,21 @@
-user charts region
+<div id="charts-layout">
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h3 class="panel-title">Metrics</h3>
+    </div>
+    <div class="panel-body">
+      <div class="charts">
+        <div class="charts-row">
+          <div class="chart" id="chart--new-opportunities"></div>
+          <div class="chart" id="chart--proposals"></div>
+          <div class="chart" id="chart--sales-cycle"></div>
+        </div>
+        <div class="charts-row">
+          <div class="chart" id="chart--proposal-ratio"></div>
+          <div class="chart" id="chart--closing-ratio"></div>
+          <div class="chart" id="chart--avg-value"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

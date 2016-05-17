@@ -1,1 +1,42 @@
-opportunity region
+<div class="panel panel-default">
+  <div class="panel-heading">Opportunity List</div>
+  <div class="panel-body">
+    <div class="row">
+      <div class="col-lg-3">
+        <div>Total Amount</div>
+        <strong>$650,000</strong>
+      </div>
+      <div class="col-lg-3">
+        <div># Opportunities</div>
+        <span>6</span>
+      </div>
+    </div>
+    <hr>
+  </div>
+  <table class="table" id="opportunity-table">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Account</th>
+        <th>Amount</th>
+        <th>Stage</th>
+        <th>Close Date</th>
+        <th>Win Probability</th>
+        <th>Representative</th>
+      </tr>
+    </thead>
+    <tbody>
+      <% for i in @opportunityList: %>
+        <tr>
+          <td><%= i.name %></td>
+          <td><%= i.account %></td>
+          <td><%= i.amount %></td>
+          <td><%= i.stage %></td>
+          <td><%= i.closeDate %></td>
+          <td><%= i.winProbability %></td>
+          <td><%= i.representative %></td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+</div>

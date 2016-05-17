@@ -11,11 +11,14 @@
  * file per style scope.
  *
  *= require dataTables/bootstrap/3/jquery.dataTables.bootstrap
+ *= require chartist.min
  *= require_tree .
  *= require_self
  */
 
 @import "bootstrap";
+
+@import "user/_user.scss";
 
 table.dataTable {
   margin-bottom: 20px !important;
@@ -29,4 +32,12 @@ table.dataTable {
       display: inline-block;
     }
   }
+}
+.dataTables_length,
+.dataTables_info {
+  padding-left: 15px;
+}
+.dataTables_filter,
+.dataTables_paginate  {
+  padding-right: 15px;
 }
