@@ -3,12 +3,9 @@
   Show.Controller =
 
     show: (model) ->
-
       users = App.request "users:entities"
-
       App.execute "when:fetched", users, =>
         user =  users.get(model)
-        console.log user
         @layout = @getLayout()
         @layout.on "show", =>
           @showDetails user
@@ -23,7 +20,7 @@
 
     showCharts: (user) ->
 
-      data = 
+      data =
         labels: [ '1', '2', '3', '4', '5', '6' ]
         series: [ { data: [1, 2, 3, 5, 8, 13] } ]
 
