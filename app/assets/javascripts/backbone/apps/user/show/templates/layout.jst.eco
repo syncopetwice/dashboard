@@ -1,8 +1,6 @@
 <div id="user-layout">
   <p><button type="button" class="btn btn-primary" data-role="back">Back</button></p>
-
   <div id="user-details-region"></div>
   <div id="user-charts-region"></div>
   <div id="user-opportunity-region"></div>
-
 </div>

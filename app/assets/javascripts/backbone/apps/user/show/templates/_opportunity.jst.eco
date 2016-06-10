@@ -4,11 +4,13 @@
     <div class="row">
       <div class="col-lg-3">
         <div>Total Amount</div>
-        <strong>$650,000</strong>
+        <strong>
+          $650 000
+        </strong>
       </div>
       <div class="col-lg-3">
-        <div># Opportunities</div>
-        <span>6</span>
+        <span># Opportunities</span>
+        <span><%= @opportunityList.length %></span>
       </div>
     </div>
     <hr>
